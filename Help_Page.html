@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Help Page</title>
+        <title>Help</title>
         <link rel="stylesheet" href="styles.css">
         <style>
             body {
@@ -11,17 +11,15 @@
                 padding: 0;
             }
             h2, p {
-                margin 10px
+                margin: 10px;
             }
             ul {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
-                overflow: hidden;
                 background-color: #333333;
-            }
-            ul li {
-                float: right;
+                display: flex;
+                align-items: center;
             }
             ul li a {
                 display: block;
@@ -29,22 +27,24 @@
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
-                float: right;
             }
             ul li a:hover {
                 background-color: #444;
+            }
+            .main-button {
+                margin-right: auto;
             }
         </style>
     </head>
     <body>
         <ul>
-            <li><a href="#help">Help</a>
+            <li class="main-button"><a href="Homepage.html"><b>Enginuity</b></a>
         </li>
-            <li><a href="#profile">Profile</a>
+            <li><a href="Listing_Page.html">Listings</a>
         </li>
-            <li><a href="#listings">Listings</a>
+            <li><a href="Account_Page.html">Account</a>
         </li>
-            <li><a href="#home">Dashboard</a>
+            <li><a href="Help_Page.html">Help</a>
         </li>
         </ul>
         <h2>Help Page</h2>
