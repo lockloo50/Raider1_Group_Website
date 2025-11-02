@@ -7,6 +7,7 @@
 		body {
 			margin: 0;
 			padding: 0;
+			font-family: Arial, sans-serif;
 		}
 		
 		head {
@@ -52,28 +53,96 @@
 		width: display-width; /* Sets the width of the box */
 		height: 150px; /* Sets the height of the box */
 		background-color: white; /* Sets the background color */
-		border: 5px solid black; /* Adds a border (thickness, style, color) */
+		border-top: 3px solid black;
+		border-bottom: 3px solid black;
 		padding-left: 50px; /* Adds space between the content and the border */
 		padding-top: 20px;
 		margin: 0px left; /* Adds space outside the border and centers the box horizontally */
 		box-sizing: border-box; /* Ensures padding and border are included in the total width/height */
+		display: flex;
+		justify-content: space-around;
 		}
 		
 		.MissionStatement {
 			list-style-type: none;
 			text-align: center;
+			margin-right: -175px;
+		}
+		
+		.MissionWords {
+			list-style-type: none;
+			text-align: center;
+			margin-top: 25px;
 		}
 		
 		.insideBox {
 		width: 150px;
+		height: 100px;
 		background-color: gray;
 		border: 1px solid black;
-		padding-top: 25px;
-		padding-bottom: 25px;
-		margin-right: 25px;
+		padding-top: 40px;
+		margin-left: 150px;
+		margin-right: -150px;
 		box-sizing: border-box;
 		text-align: center;
 		
+		}
+		
+		.BodyHold {
+			display: flex;
+			gap: 0;
+		}
+		
+		.Item {
+			margin-top: 50px;
+			height: 500px;
+		}
+		
+		.JobFair{
+			width: 350px;
+			height 500px;
+			border-top: 0px none;
+			border-bottom: 2px solid black;
+			border-left: 2px solid black;
+			border-right: 2px solid black;
+			box-sizing: border-box;
+			margin-right: 50px;
+			background-color: green;
+		}
+		
+		.AccTab {
+			width: 1076px;
+			height: 150px;
+			border-radius: 15px;
+			background-color: green;
+		}
+		
+		.DoubleTab {
+			display: flex;	
+			margin-top: 40px;
+		}
+		
+		.StatusTab {
+			width: 528px;
+			height: 100px;
+			border-radius: 15px;
+			background-color: green;
+			margin-right: 20px;
+		}
+		
+		.HelpTab {
+			width: 528px;
+			height: 100px;
+			border-radius: 15px;
+			background-color: green;
+		}
+		
+		.ListingTab {
+			margin-top: 40px;
+			width: 1076px;
+			height: 150px;
+			border-radius: 15px;
+			background-color: green;
 		}
 		
 	</style>
@@ -81,33 +150,65 @@
 	<head>
 	<body>
 		<ul>
-			<li class="LeftText"><a href="Homepage.html">Enginuity</a></li>
-			<li><a>⌄</a></li>
-			<li><a href="Listing_Page.html">Listings</a>
-			<li><a href="Account_Page.html">Account</a></li>
-			<li><a href="Help_Page.html">Help</a></li>
+			<li class="LeftText"><strong><a href="Homepage.html">Enginuity</a></strong></li>
+			<!--<li><strong><a>⌄</a></strong></li>-->
+			<li><strong><a href="Help_Page.html">Help</a></strong></li>
+			<li><strong><a href="Account_Page.html">Account</a></strong></li>
+			<li><strong><a href="Listing_Page.html">Listings</a></strong></li>
+			
 		</ul>
 	
 		<div class="topBox">
-			<div style="display: flex;">
 				<div class="insideBox">
 					Placeholder
 				</div>
 			
 				<div class="MissionStatement">
 					<h1><pre>
-					Mission
-					Statement
+ Mission .
+Statement.
 					</pre></h1>
 				</div>
-			
-			</div>
+				
+				<div class="MissionWords">
+					<p><strong>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</strong></p>
+				</div>
 			
 		</div>
-		<h1>Heading 1 is the best</h1>
 		
-		<p>Then this body paragraph is better</p>
-	
+		<div class="BodyHold">
+			<div class="JobFair">
+				Test
+			</div>
+			
+			<div class="Item">
+				
+				<div class="AccTab">
+				
+				</div>
+				
+				<div class="DoubleTab">
+				
+					<div class="StatusTab">
+						test
+					</div>
+					
+					<div class="HelpTab">
+				
+					</div>
+				
+				</div>
+				
+				<div class="ListingTab">
+				
+				</div>
+				
+			</div>
+		
+		</div>
+		
 	</body>
 	
 </html>
