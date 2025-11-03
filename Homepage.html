@@ -8,6 +8,7 @@
 			margin: 0;
 			padding: 0;
 			font-family: Arial, sans-serif;
+			background-color: #dad7cd;
 		}
 		
 		head {
@@ -24,20 +25,20 @@
 			margin: 0;
 			padding: 0;
 			overflow: hidden;
-			background-color: #C1F5C1;
+			background-color: #344e41;
 		}
 		
 		ul li a {
 			float: right;
 			display: block;
-			color: black;
+			color: white;
 			text-align: center;
 			padding: 14px 16px;
 			text-decoration: none;
 		}
 		
 		ul li a:hover {
-			background-color: green;
+			background-color: #3a5a40;
 		}
 		
 		ul .LeftText {
@@ -47,13 +48,20 @@
 			text-align: center;
 			text-decoration: none;
 		}
-
+		
+		.logo {
+				float: left;
+                height: 30px;
+                margin-left: 5px;
+                padding-top: 5px;   
+                padding-bottom: 5px;
+                padding-left: 5px;
+            }
 	
 		.topBox {
 		width: display-width; /* Sets the width of the box */
 		height: 150px; /* Sets the height of the box */
-		background-color: white; /* Sets the background color */
-		border-top: 3px solid black;
+		background-color: #dad7cd; /* Sets the background color */
 		border-bottom: 3px solid black;
 		padding-left: 50px; /* Adds space between the content and the border */
 		padding-top: 20px;
@@ -66,18 +74,20 @@
 		.MissionStatement {
 			list-style-type: none;
 			text-align: center;
-			margin-right: -175px;
+			margin-right: -250px;
 		}
 		
 		.MissionWords {
+			overflow: auto;
 			list-style-type: none;
 			text-align: center;
-			margin-top: 25px;
+			margin-top: 0.5%;
 		}
 		
 		.insideBox {
 		width: 150px;
 		height: 100px;
+		border-radius: 5px;
 		background-color: gray;
 		border: 1px solid black;
 		padding-top: 40px;
@@ -99,22 +109,75 @@
 		}
 		
 		.JobFair{
-			width: 350px;
+			overflow: auto;
+			width: 17%;
 			height 500px;
 			border-top: 0px none;
-			border-bottom: 2px solid black;
+			border-bottom: 0px none;
 			border-left: 2px solid black;
 			border-right: 2px solid black;
 			box-sizing: border-box;
+			background-color: #a3b18a;
 			margin-right: 50px;
-			background-color: green;
+			<!--text-align: center;-->
+			display: grid;
+			place-items: center;
+		}
+		
+		.JobFair h3 {
+			text-align: center;
+			width: 85%;
+			padding-bottom: 20px;
+			border-bottom: 2px solid black;
+			align-items: center
+		}
+		
+		.Fair {
+			overflow: auto;
+			width: 90%;
+			height: 25%;
+			border: 2px solid #4e724d;
+			border-radius: 15px;
+			background-color: #588157;
+			margin-bottom: 2vh;	
+		}
+		
+		.Fair a {
+			margin-bottom: 5%;
+			color: white;
+			text-align: center;
+			margin-left: 11%;
+		}
+		
+		.FairPicture {
+			overflow: hidden;
+			width: 80%;
+			height: 60%;
+			line-height: 70%;
+			background-color: gray;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: normal;
+			text-align: center;
+			margin-top: 5%;
+			margin-left: 10%;
+			margin-bottom: 2.5%;
+		}
+		
+		.FairPicture p {
+			padding-top: 10%;
+			transform: rotate(45deg);
 		}
 		
 		.AccTab {
-			width: 1076px;
+			overflow: auto;
+			width: 70vw;
 			height: 150px;
 			border-radius: 15px;
-			background-color: green;
+			background-color: #a3b18a;
+			
+			display: flex;
+			
 		}
 		
 		.DoubleTab {
@@ -123,33 +186,46 @@
 		}
 		
 		.StatusTab {
-			width: 528px;
+			overflow: auto;
+			width: 34.5vw;
 			height: 100px;
 			border-radius: 15px;
-			background-color: green;
+			background-color: #a3b18a;
 			margin-right: 20px;
 		}
 		
 		.HelpTab {
-			width: 528px;
+			overflow: auto;
+			width: 34.5vw;
 			height: 100px;
 			border-radius: 15px;
-			background-color: green;
+			background-color: #a3b18a;
 		}
 		
 		.ListingTab {
+			overflow: auto;
 			margin-top: 40px;
-			width: 1076px;
+			width: 70vw;
 			height: 150px;
 			border-radius: 15px;
-			background-color: green;
+			background-color: #a3b18a;
 		}
+		
+		footer {
+                background-color: #3a5a40;
+                color: white;
+                text-align: center;
+                font-size: small;
+                padding: 1px 0;
+                margin-top: 0px;
+            }
 		
 	</style>
 
 	<head>
 	<body>
 		<ul>
+			<li><img class="logo" src="files/logo.png" id="logo"></li> 
 			<li class="LeftText"><strong><a href="Homepage.html">Enginuity</a></strong></li>
 			<!--<li><strong><a>⌄</a></strong></li>-->
 			<li><strong><a href="Help_Page.html">Help</a></strong></li>
@@ -172,7 +248,7 @@ Statement.
 				
 				<div class="MissionWords">
 					<p><strong>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
 					</strong></p>
 				</div>
 			
@@ -180,13 +256,39 @@ Statement.
 		
 		<div class="BodyHold">
 			<div class="JobFair">
-				Test
+				<h3><strong>Job Fairs Happening</strong></h3>
+				
+				<div class="Fair">
+					<div class="FairPicture">
+						<p><strong>Placeholder</strong></p>
+					</div>
+					<strong><a href="Homepage.html">[Name of Event] : [Location]</a></strong>
+				</div>
+				
+				<div class="Fair">
+					<div class="FairPicture">
+						<p><strong>Placeholder</strong></p>
+					</div>
+					<strong><a href="Homepage.html">[Name of Event] : [Location]</a></strong>
+				</div>
+				
+				<div class="Fair">
+					<div class="FairPicture">
+						<p><strong>Placeholder</strong></p>
+					</div>
+					<strong><a href="Homepage.html">[Name of Event] : [Location]</a></strong>
+				</div>
+				
 			</div>
 			
 			<div class="Item">
 				
 				<div class="AccTab">
-				
+					
+					<div class="AccIcon">
+					
+					</div>
+					
 				</div>
 				
 				<div class="DoubleTab">
@@ -208,6 +310,11 @@ Statement.
 			</div>
 		
 		</div>
+		
+		<footer>
+			<p>&copy; 2025 Enginuity. All rights reserved.</p>
+			<p><strong>Contact Us:</strong> <u>customer-support@enginuity.com</u></p>
+		</footer> 
 		
 	</body>
 	
