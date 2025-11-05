@@ -90,12 +90,17 @@
 		border-radius: 5px;
 		background-color: gray;
 		border: 1px solid black;
-		padding-top: 40px;
 		margin-left: 150px;
 		margin-right: -150px;
 		box-sizing: border-box;
-		text-align: center;
 		
+		}
+		
+		.insideBox img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
 		}
 		
 		.BodyHold {
@@ -259,6 +264,48 @@
 			background-color: #a3b18a;
 		}
 		
+		.ValueProposition{
+			width = 100%;
+			border-top: 3px solid black;
+		}
+		
+		.ValueProposition h2 {
+			text-align: center;
+		}
+		
+		.ValueSeparate {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+		
+		.StudentValue {
+			text-align: center;
+			border-top: 1px solid black;
+		}
+		
+		.CompanyValue {
+			text-align: center;
+			height: 100%;
+			border-top: 1px solid black;
+			border-left: 2px solid black;
+		}
+		
+		.HowItWorks {
+			width = 100%;
+			border-top: 3px solid black;
+		}
+		
+		.HowItWorks  {
+			text-align: center;
+		}
+		
+		
+		.HowItWorks ol {
+			display: inline-block;
+			text-align: left;
+		}
+		
+		
 		footer {
                 background-color: #3a5a40;
                 color: white;
@@ -284,7 +331,7 @@
 	
 		<div class="topBox">
 				<div class="insideBox">
-					Placeholder
+					<img src="files/hero.jpg" alt="Hero">
 				</div>
 			
 				<div class="MissionStatement">
@@ -296,7 +343,7 @@ Statement.
 				
 				<div class="MissionWords">
 					<p><strong>
-					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+					<h4>A free and transparent communication platform connecting students to companies smoothly and fast without paywalls or spam.</h4>
 					</strong></p>
 				</div>
 			
@@ -386,6 +433,47 @@ Statement.
 				
 			</div>
 		
+		</div>
+		
+		<div class="ValueProposition">
+			<h2>Value Proposition</h2>
+			
+			<div class="ValueSeparate">
+				
+				<div class="StudentValue">
+					<h3>To Students</h3>
+					
+					<ol>
+						<li>We provide an environment with less Competition</li>
+						<li>Easier methods of getting into communication with Companies</li>
+						<li>Seeing more of the listings YOU want to see</li>
+					</ol>
+				</div>
+				
+				<div class="CompanyValue">
+					<h3>To Companies</h3>
+					
+					<ol>
+						<li>We make it easier to send out your decisions to students</li>
+						<li>Get direct access to the students of the future</li>
+						<li>Get you promote your listings above others with special paid advertisements</li>
+					</ol>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<div class="HowItWorks">
+			<h2>How Our Site Works</h2>
+			
+			<ol><strong>
+				<li>Students get recomended listings based off of provided information</li>
+				<li>Students can watch video about the company/listing or read about the listing in its page</li>
+				<li>Student's submit an application to a listing and can talk with a representative in a chat box</li>
+				<li>Eventually, the companies will update you whether you were accepted or not via our sites Application Status feature</li>
+			</strong></ol>
+			
 		</div>
 		
 		<footer>
