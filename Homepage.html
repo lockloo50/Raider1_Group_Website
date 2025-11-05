@@ -74,7 +74,7 @@
 		.MissionStatement {
 			list-style-type: none;
 			text-align: center;
-			margin-right: -250px;
+			margin-right: -200px;
 		}
 		
 		.MissionWords {
@@ -170,14 +170,59 @@
 		}
 		
 		.AccTab {
-			overflow: auto;
+			overflow: hidden;
 			width: 70vw;
 			height: 150px;
 			border-radius: 15px;
 			background-color: #a3b18a;
 			
-			display: flex;
-			
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 1%;
+		}
+		
+		
+		.AccFirstColumn {
+			justify-self: center;
+			align-self: center;
+			width: 30%;
+			height: 80%;
+		}
+		
+		.AccSecondColumn {
+			padding-top: 5%;
+		}
+		
+		.AccThirdColumn {
+			padding-top: 5%;
+		}
+		
+		.AIcon {
+			overflow: hidden;
+			width: 100%;
+			height: 80%;
+			border: 1px solid black;
+			border-radius: 10px;
+			background-color: gray;
+		}
+		
+		.AIcon p {
+			padding-top: 15%;
+			text-align: center;
+			transform: rotate(25deg);
+		}
+		
+		
+		
+		.AccBlock {
+			overflow: hidden;
+			width: 75%;
+			height: 40%;
+			border: 1px solid #4e724d;
+			border-radius: 10px;
+			background-color: #588157;
+			margin-bottom: 2%;
+			text-align: center;
 		}
 		
 		.DoubleTab {
@@ -186,17 +231,20 @@
 		}
 		
 		.StatusTab {
-			overflow: auto;
-			width: 34.5vw;
+			overflow: hidden;
+			width: 44.5vw;
 			height: 100px;
 			border-radius: 15px;
 			background-color: #a3b18a;
 			margin-right: 20px;
+			
+			style: grid;
+			
 		}
 		
 		.HelpTab {
 			overflow: auto;
-			width: 34.5vw;
+			width: 24.5vw;
 			height: 100px;
 			border-radius: 15px;
 			background-color: #a3b18a;
@@ -262,21 +310,21 @@ Statement.
 					<div class="FairPicture">
 						<p><strong>Placeholder</strong></p>
 					</div>
-					<strong><a href="Homepage.html">[Name of Event] : [Location]</a></strong>
+					<a href="Homepage.html">[Name of Event] : [Location]</a>
 				</div>
 				
 				<div class="Fair">
 					<div class="FairPicture">
 						<p><strong>Placeholder</strong></p>
 					</div>
-					<strong><a href="Homepage.html">[Name of Event] : [Location]</a></strong>
+					<a href="Homepage.html">[Name of Event] : [Location]</a>
 				</div>
 				
 				<div class="Fair">
 					<div class="FairPicture">
 						<p><strong>Placeholder</strong></p>
 					</div>
-					<strong><a href="Homepage.html">[Name of Event] : [Location]</a></strong>
+					<a href="Homepage.html">[Name of Event] : [Location]</a>
 				</div>
 				
 			</div>
@@ -285,11 +333,40 @@ Statement.
 				
 				<div class="AccTab">
 					
-					<div class="AccIcon">
+					<div class="AccFirstColumn">
 					
+						<div class="AIcon">
+							<p><strong>Placeholder</strong></p>
+						</div>
+						<a href="Account_Page.html">[Insert Name]</a>
+						
+					</div>
+					<div class="AccSecondColumn">
+					
+						<div class="AccBlock">
+							<h3><a href="Account_Page.html">Resume Link</a></h3>
+						</div>
+						
+						<div class="AccBlock">
+							<h3>[Prior Experience]</h3>
+						</div>
+						
+					</div>
+					
+					<div class="AccThirdColumn">
+					
+						<div class="AccBlock">
+							<h3>[Field of Study]</h3>
+						</div>
+						
+						<div class="AccBlock">
+							<h3>[Current Year of Study]</h3>
+						</div>
+						
 					</div>
 					
 				</div>
+				
 				
 				<div class="DoubleTab">
 				
