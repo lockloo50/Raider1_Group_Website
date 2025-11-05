@@ -4,10 +4,9 @@
 - Elijah - elijcoch
 - Gibson - patchpotential
 - Damien - lockloo50
-- Silas - [Username]
+- Silas - Kreech52
 ## Project Description
-[Brief description of the Connect platform and what this project
-implements. (Refer to BMC document)]
+A platform that includes free messaging between verified students and companies, advanced job filtering and tagging, as well as application notifications as hiring processes go on.
 ## Pages Implemented
 1. Home Page (Homepage.html)
 2. Listing Page (Listing_Page.html)
@@ -19,15 +18,13 @@ implements. (Refer to BMC document)]
 - Git & GitHub
 - GitHub Pages
 ## Individual Contributions Sample
-### [Team Member 1 Name]
-- Implemented landing page HTML structure
-- Created responsive navigation bar
+### Eli
+- Created navigation bar component
+- Created footer element
+- Filled out README template
+### Gibson
+- Helped develop and look into collaborative branches
+### Damien
 - [List other specific contributions]
-### [Team Member 2 Name]
-- Designed and implemented color scheme
-- Created footer component
-- [List other specific contributions]
-### [Team Member 3 Name]
-- Implemented hero section styling
-- Made site responsive for mobile devices
+### Silas
 - [List other specific contributions]
