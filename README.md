@@ -25,6 +25,9 @@ A platform that includes free messaging between verified students and companies,
 ### Gibson
 - Helped develop and look into collaborative branches
 ### Damien
-- [List other specific contributions]
+- Working on Homepage Design
+- Added the Hero Statement
+- Created the Value Proposition for Students and Companies
+- Created the How It Works section
 ### Silas
 - [List other specific contributions]
