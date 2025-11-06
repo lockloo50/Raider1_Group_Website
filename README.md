@@ -14,20 +14,23 @@ A platform that includes free messaging between verified students and companies,
 4. Help Page (Help_Page.html)
 ## Technologies Used
 - HTML5
-- CSS3 (Flexbox, Grid, Media Queries)
+- CSS3
 - Git & GitHub
 - GitHub Pages
 ## Individual Contributions Sample
 ### Eli
 - Created navigation bar component
 - Created footer element
-- Filled out README template
+- Started README template
+- Working on Help Page Design
 ### Gibson
 - Helped develop and look into collaborative branches
+- Working on Listing Page Design
 ### Damien
 - Working on Homepage Design
 - Added the Hero Statement
 - Created the Value Proposition for Students and Companies
 - Created the How It Works section
 ### Silas
-- [List other specific contributions]
+- Helped develop and look into collaborative branches
+- Working on Account Page Design
