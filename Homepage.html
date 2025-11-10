@@ -97,6 +97,7 @@
 		}
 		
 		.insideBox img {
+			overflow: hidden;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
@@ -237,22 +238,135 @@
 		
 		.StatusTab {
 			overflow: hidden;
-			width: 44.5vw;
+			width: 39.5vw;
 			height: 100px;
 			border-radius: 15px;
 			background-color: #a3b18a;
 			margin-right: 20px;
 			
-			style: grid;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 0;
 			
 		}
 		
-		.HelpTab {
+		.StatusFirstColumn {
+			overflow: hidden;
+			width: 75%;
+			align-self: center;
+		}
+		
+		.StatusFirstColumn h3 {
 			overflow: auto;
-			width: 24.5vw;
+			height: 15%; 
+			text-align: center;
+			border-right: 1px solid black;
+		
+		}
+		
+		.StatusSecondColumn {
+			overflow: hidden;
+			padding-top: 5%;
+		}
+		
+		.StatusThirdColumn {
+			overflow: hidden;
+			padding-top: 5%;
+		}
+		
+		.StatusBlock {
+			overflow: hidden;
+			width: 75%;
+			height: 40%;
+			border: 1px solid #4e724d;
+			border-radius: 10px;
+			background-color: #588157;
+			margin-bottom: 2%;
+			text-align: center;
+			display: flex;
+		}
+		
+		.StatusBlock p {
+			margin-left: 3%;
+		}
+		
+		.StatusOvalG {
+			overflow: hidden;
+			margin-left: 10%;
+			margin-top: 2%;
+			overflow: hidden;
+			width: 50%;
+			height: 75%;
+			border: 1px solid black;
+			border-radius: 10px;
+			background-color: green;
+			margin-bottom: 50%;
+			text-align: center;
+		}
+		
+		.StatusOvalG p {
+			overflow: hidden;
+		}
+		
+		.StatusOvalR {
+			overflow: hidden;
+			margin-left: 10%;
+			margin-top: 2%;
+			overflow: hidden;
+			width: 50%;
+			height: 75%;
+			border: 1px solid black;
+			border-radius: 10px;
+			background-color: red;
+			margin-bottom: 50%;
+			text-align: center;
+		}
+		
+		.StatusOvalR p {
+			overflow: hidden;
+		}
+		
+		.HelpTab {
+			overflow: hidden;
+			width: 29.5vw;
 			height: 100px;
 			border-radius: 15px;
 			background-color: #a3b18a;
+			
+			display: grid;
+			grid-template-columns: 25% 50% 25%;
+			gap: 0;
+			
+		}
+		
+		.HelpTab h2 {
+			overflow: hidden;
+			height: 100%;
+			width: 100%;
+		}
+		
+		.HelpColumnOne {
+			height: 100%;
+			width: 100%;
+			justify-self: center;
+			align-self: center;
+			text-align: center;
+		}
+		
+		.HelpColumnTwo {
+			text-align: center;
+		}
+		
+		.HelpColumnTwo h2 {
+			gap: -15px;
+		}
+		
+		.HelpColumnThree {
+			height: 100%;
+			width: 100%;
+			justify-self: center;
+			align-self: center;
+			text-align: center;
 		}
 		
 		.ListingTab {
@@ -262,6 +376,46 @@
 			height: 150px;
 			border-radius: 15px;
 			background-color: #a3b18a;
+		}
+		
+		.ListingTab h5 {
+			text-align: center;
+			margin-top: 1%;
+		}
+		
+		.ListingCubes {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+		}
+		
+		.ListingOne {
+			height: 100px;
+			text-align: center;
+			border-top: 1px solid black;
+			border-right: 1px solid black;
+		}
+		
+		.ListingFour {
+			height: 100px;
+			text-align: center;
+			border-top: 1px solid black;
+		}
+
+		
+		.PlayButton {
+			justify-self: center;
+			align-self: center;
+			
+			height: 55%;
+			width: 25%;
+		}
+		
+		.PlayButton img {
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
 		}
 		
 		.ValueProposition{
@@ -418,17 +572,135 @@ Statement.
 				<div class="DoubleTab">
 				
 					<div class="StatusTab">
-						test
+						
+						<div class="StatusFirstColumn">
+							<h3>Application(s) Status</h3>
+						</div>
+						
+						<div class="StatusSecondColumn">
+							
+							<div class="StatusBlock">
+								
+								<p style="font-size: 65%;"><strong>[Job Title]</strong></p>
+								
+								<div class="StatusOvalG">
+									<p style="font-size: 65%;"><strong>Accepted</strong></p>
+								</div>
+								
+							</div>
+							
+							<div class="StatusBlock">
+								
+								<p style="font-size: 65%;"><strong>[Job Title]</strong></p>
+								
+								<div class="StatusOvalG">
+									<p style="font-size: 65%;"><strong>Accepted</strong></p>
+								</div>
+								
+							</div>
+							
+						</div>
+						
+						<div class="StatusThirdColumn">
+						
+							<div class="StatusBlock">
+							
+								<p style="font-size: 65%;"><strong>[Job Title]</strong></p>
+								
+								<div class="StatusOvalR">
+									<p style="font-size: 65%;"><strong>Rejected</strong></p>
+								</div>
+							
+							</div>
+							
+							<div class="StatusBlock">
+							
+								<p style="font-size: 65%;"><strong>[Job Title]</strong></p>
+								
+								<div class="StatusOvalR">
+									<p style="font-size: 65%;"><strong>Rejected</strong></p>
+								</div>
+							
+							</div>
+							
+						</div>
+						
 					</div>
 					
 					<div class="HelpTab">
-				
+						
+						<div class="HelpColumnOne">
+							<h2 style="font-size: 200%;">?</h2>
+						</div>
+						
+						<div class="HelpColumnTwo">
+							<h3 style="font-size: 1vw;">Don't know where to Begin</h3>
+							<h2 style="font-size: 1vw;"><a href="Help_Page.html">Start Here</a></h2>
+						</div>
+						
+						<div class="HelpColumnThree">
+							<h2 style="font-size: 200%;">?</h2>
+						</div>
+						
 					</div>
 				
 				</div>
 				
 				<div class="ListingTab">
-				
+					<h5><a href="Listing_Page.html">Recomended Listings</a></h5>
+					
+					<div class="ListingCubes">
+					
+						<div class="ListingOne">
+						
+							<a href="Listing_Page.html">[Job Position]</a>
+						
+							<div class="PlayButton">
+								<img src="images/playbutton.png" alt="PlayButton">
+							</div>
+							
+							<a href="Listing_Page.html">[Company Name]</a>
+							
+						</div>
+						
+						<div class="ListingOne">
+						
+							<a href="Listing_Page.html">[Job Position]</a>
+						
+							<div class="PlayButton">
+								<img src="images/playbutton.png" alt="PlayButton">
+							</div>
+							
+							<a href="Listing_Page.html">[Company Name]</a>
+							
+						</div>
+						
+						<div class="ListingOne">
+						
+							<a href="Listing_Page.html">[Job Position]</a>
+						
+							<div class="PlayButton">
+								<img src="images/playbutton.png" alt="PlayButton">
+							</div>
+							
+							<a href="Listing_Page.html">[Company Name]</a>
+							
+						</div>
+						
+						<div class="ListingFour">
+						
+							<a href="Listing_Page.html">[Job Position]</a>
+						
+							<div class="PlayButton">
+								<img src="images/playbutton.png" alt="PlayButton">
+							</div>
+							
+							<a href="Listing_Page.html">[Company Name]</a>
+							
+						</div>
+					
+					</div>
+					
 				</div>
 				
 			</div>
