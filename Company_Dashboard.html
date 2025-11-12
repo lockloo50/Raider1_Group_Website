@@ -112,6 +112,110 @@
 			border-bottom: 1px solid black;
 		}
 		
+		.LineDivider {
+			width: 100%;
+			border-top: 2px solid black;
+		}
+		
+		h2 {
+			text-align: center;
+		}
+		
+		.PostNewProject {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5%;
+			overflow: auto;
+			box-sizing: border-box;
+			margin-right: 5%;
+			margin-left: 5%;
+			margin-bottom: 2%;
+			padding: 2%;
+			width: 90%;
+			height: 200px;
+			background-color: #a3b18a;
+			border-radius: 15px;
+		}
+		
+		.PostedProjects {
+			justify-self: center;
+			align-self: center;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 0;
+			overflow: auto;
+			box-sizing: border-box;
+			margin-right: 5%;
+			margin-left: 5%;
+			margin-bottom: 2%;
+			padding: 2%;
+			width: 60%;
+			height: 400px;
+			background-color: #a3b18a;
+			border-radius: 15px;
+		}
+		
+		.project {
+			justify-self: center;
+			align-self: center;
+			overflow: auto;
+			width: 60%;
+			height: 95%;
+			background-color: #588157;
+			border-radius: 15px;
+			text-align: center;
+		}
+		
+		.project h3 {
+			text-align: center;
+			padding-bottom: 4%;
+			border-bottom: 1px solid black;
+		}
+		
+		.project li {
+			display: inline-block;
+			margin-bottom: 15%;
+		}
+		
+		.RecentApplications {
+			justify-self: center;
+			align-self: center;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 0;
+			overflow: auto;
+			box-sizing: border-box;
+			margin-right: 5%;
+			margin-left: 5%;
+			margin-bottom: 2%;
+			padding: 2%;
+			width: 60%;
+			height: 600px;
+			background-color: #a3b18a;
+			border-radius: 15px;
+		}
+		
+		.Applicant {
+			justify-self: center;
+			align-self: center;
+			overflow: auto;
+			width: 60%;
+			height: 95%;
+			background-color: #588157;
+			border-radius: 15px;
+			text-align: center;
+		}
+		
+		.Applicant h3 {
+			text-align: center;
+			padding-bottom: 4%;
+			border-bottom: 1px solid black;
+		}
+		
+		.Applicant li {
+			margin-bottom: 15%;
+		}
+		
 	</style>
 	
 	<head>
@@ -143,6 +247,188 @@
 				<li style="font-size: 200%;">Projects Posted: x</li>
 				<li style="font-size: 200%;">Applications Received: x</li>
 				<li style="font-size: 200%;">Active Projects: x</li>
+			</div>
+		
+		</div>
+		
+		<div class="LineDivider"></div>
+		
+		<h2>Post a New Project:</h2>
+		
+		<div class="PostNewProject">
+			
+			<div class="NewProjectColumnOne">
+				<label for="ProjectTitle">Project Title:</label>
+				<input type="text" id="ProjectTitle" name="ProjectTitle">
+				
+				<p><label for="ProjectDescription">Project Description:</label></p>
+				<textarea id="ProjectDescription" name="ProjectDescription" rows"10" cols="50"></textarea>
+				
+			</div>
+			<div class="NewProjectColumnTwo">
+				<label for="ProjectSkills">Required Skills:</label>
+				<input type="text" id="ProjectSkills" name="ProjectSkills">
+				
+				<p><label for="duration">Choose the duration for the project:</label></p>
+				
+				<select name="duration" id="duration">
+					<option value="8">8 Weeks</option>
+					<option value="12">12 Weeks</option>
+					<option value="16">16 Weeks</option>
+					<option value="20">20 Weeks</option>
+				</select>
+				
+			</div>
+			
+			<div class="NewProjectColumnThree">
+				<label for="compensation">Compensation: $</label>
+				<input type="number" id="compensation" name="compensation" min="0">
+				<br>
+				<br>
+				<br>
+				<br>
+				<input type="submit" value="Submit Form">
+				
+			</div>
+			
+		</div>
+		
+		<div class="LineDivider"></div>
+		
+		<h2>Posted Projects:</h2>
+		
+		<div class="PostedProjects">
+		
+			<div class="project">
+			
+			<h3>[Sample Project Title]</h3>
+			
+			<strong><li>Applications Received: 0</li>
+			<li>Status: Active</li>
+			<li>Post Date: 10/09/2025</li>
+			
+			<button type="button">View Application</button></strong>
+			
+			</div>
+			
+			<div class="project">
+			
+			<h3>[Sample Project Title]</h3>
+			
+			<strong><li>Applications Received: 0</li>
+			<li>Status: Active</li>
+			<li>Post Date: 10/09/2025</li>
+			
+			<button type="button">View Application</button></strong>
+			
+			</div>
+			
+			<div class="project">
+			
+			<h3>[Sample Project Title]</h3>
+			
+			<strong><li>Applications Received: 0</li>
+			<li>Status: Active</li>
+			<li>Post Date: 10/09/2025</li>
+			
+			<button type="button">View Application</button></strong>
+			
+			</div>
+		
+		</div>
+		
+		<div class="LineDivider"></div>
+		
+		<h2>Recent Applications:</h2>
+		
+		<div class="RecentApplications">
+		
+			<div class="Applicant">
+			
+			<h3>[Sample Student Name]</h3>
+			
+			<strong><li>Project Applied to: [Insert Project Name Here]</li>
+			<li>Key Skills
+				<ul>
+					<li>[Insert skill 1 Here]</li>
+					<li>[Insert skill 2 Here]</li>
+					<li>[Insert skill 3 Here]</li>
+				</ul></li>
+			<li>Application Date: 10/09/2025</li>
+			
+			<button type="button">View Profile</button>
+			<br>
+			
+			<button type="button">Accept</button>
+			
+			<button type="button">Reject</button></strong>
+			
+			</div>
+			
+			<div class="Applicant">
+			
+			<h3>[Sample Student Name]</h3>
+			
+			<strong><li>Project Applied to: [Insert Project Name Here]</li>
+			<li>Key Skills
+				<ul>
+					<li>[Insert skill 1 Here]</li>
+					<li>[Insert skill 2 Here]</li>
+					<li>[Insert skill 3 Here]</li>
+				</ul></li>
+			<li>Application Date: 10/09/2025</li>
+			
+			<button type="button">View Profile</button>
+			<br>
+			
+			<button type="button">Accept</button>
+			
+			<button type="button">Reject</button></strong>
+			
+			</div>
+			
+			<div class="Applicant">
+			
+			<h3>[Sample Student Name]</h3>
+			
+			<strong><li>Project Applied to: [Insert Project Name Here]</li>
+			<li>Key Skills
+				<ul>
+					<li>[Insert skill 1 Here]</li>
+					<li>[Insert skill 2 Here]</li>
+					<li>[Insert skill 3 Here]</li>
+				</ul></li>
+			<li>Application Date: 10/09/2025</li>
+			
+			<button type="button">View Profile</button>
+			<br>
+			
+			<button type="button">Accept</button>
+			
+			<button type="button">Reject</button></strong>
+			
+			</div>
+			
+			<div class="Applicant">
+			
+			<h3>[Sample Student Name]</h3>
+			
+			<strong><li>Project Applied to: [Insert Project Name Here]</li>
+			<li>Key Skills
+				<ul>
+					<li>[Insert skill 1 Here]</li>
+					<li>[Insert skill 2 Here]</li>
+					<li>[Insert skill 3 Here]</li>
+				</ul></li>
+			<li>Application Date: 10/09/2025</li>
+			
+			<button type="button">View Profile</button>
+			<br>
+			
+			<button type="button">Accept</button>
+			
+			<button type="button">Reject</button></strong>
+			
 			</div>
 		
 		</div>
