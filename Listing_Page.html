@@ -1,61 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Job Listings</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, sans-serif;
-            }
-            h2, p {
-                margin: 10px;
-            }
-            nav {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                background-color: #333333;
-                display: flex;
-                align-items: center;
-            }
-            nav li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            nav li a:hover {
-                background-color: #444;
-            }
-            .home {
-                margin-right: auto;
-            }
-            footer {
-                background-color: #333333;
-                color: white;
-                text-align: center;
-                font-size: small;
-                padding: 1px 0;
-                margin-top: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <nav>
-            <li class="home"><a href="Homepage.html"><b>Enginuity</b></a></li>
-            <li><a href="Listing_Page.html">Listings</a></li>
-            <li><a href="Account_Page.html">Account</a></li>
-            <li><a href="Help_Page.html">Help</a></li>
-        </nav>
-            <h2>Listing Page</h2>
-            <p>Listing stuff for this page...Ahh yes listings</p>
-        <footer>
-            <p>&copy; 2025 Enginuity. All rights reserved.</p>
-            <p><strong>Contact Us:</strong> <u>customer-support@enginuity.com</u></p>
-        </footer> 
-    </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enginuity | Project Listings</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dad7cd;
+}
+
+nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #344e41;
+}
+
+nav li a {
+	float: right;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: #3a5a40;
+}
+
+nav .LeftText {
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+.logo {
+	float: left;
+	height: 30px;
+	margin-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+
+footer {
+    background-color: #3a5a40;
+    color: white;
+    text-align: center;
+    font-size: small;
+    padding: 1px 0;
+    margin-top: 40px;
+}
+
+.page-container {
+    margin: 40px;
+}
+
+.company-header {
+    background-color: #a3b18a;
+    padding: 15px;
+    border: 2px solid #344e41;
+    border-radius: 10px;
+}
+.company-logo {
+    width: 60px;
+    height: 60px;
+    background-color: #344e41;
+    border-radius: 8px;
+}
+
+.filters-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.sidebar {
+    width: 220px;
+    background-color: #a3b18a;
+    padding: 15px;
+    border: 2px solid #344e41;
+    border-radius: 10px;
+}
+
+.project-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.project-card {
+    background-color: #a3b18a;
+    border: 1px solid #344e41;
+    padding: 15px;
+    border-radius: 8px;
+}
+.project-card button {
+    background-color: #344e41;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.pagenavigation {
+    text-align: center;
+    margin-top: 30px;
+}
+.pagenavigation button, .pagenavigation span {
+    background-color: #a3b18a;
+    padding: 6px 10px;
+    border: 1px solid #344e41;
+    margin: 0 5px;
+    border-radius: 6px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <li><img class="logo" src="images/logo.png" id="logo"></li>
+    <li class="LeftText"><strong><a href="Homepage.html">Enginuity</a></strong></li>
+    <li><strong><a href="Help_Page.html">Help</a></strong></li>
+    <li><strong><a href="Account_Page.html">Account</a></strong></li>
+    <li><strong><a href="Listing_Page.html">Listings</a></strong></li>
+    <li><strong><a href="Company_Dashboard.html">Companies</a></strong></li>
+</nav>
+
+<div class="page-container">
+
+    <div class="company-header">
+        <div style="display:flex; align-items:center; gap:15px;">
+            <div class="company-logo"></div>
+            <div>
+                <h2>Sample Company</h2>
+                <p>Company Overview</p>
+            </div>
+        </div>
+        <div>
+            <p>Projects Posted: Sample</p>
+            <p>Applications Received: Sample</p>
+            <p>Active Projects: Sample</p>
+        </div>
+    </div>
+
+    <h1 style="margin-top:30px;">Browse Projects</h1>
+    <p>Explore all available project opportunities.</p>
+    <p><strong>Total Projects: Sample</strong></p>
+
+    <div class="filters-container">
+
+        <div class="sidebar">
+            <h3>Search</h3>
+            <input type="text" style="width:100%; padding:6px;">
+
+            <h3>Skills</h3>
+            <label><input type="checkbox"> HTML</label><br>
+            <label><input type="checkbox"> CSS</label><br>
+            <label><input type="checkbox"> JavaScript</label><br>
+            <label><input type="checkbox"> Python</label><br>
+
+            <h3>Duration</h3>
+            <label><input type="radio" name="duration"> 8 Weeks</label><br>
+            <label><input type="radio" name="duration"> 12 Weeks</label><br>
+            <label><input type="radio" name="duration"> 16 Weeks</label><br>
+
+            <h3>Compensation</h3>
+            <input type="text" placeholder="Min" style="width:100%; padding:6px; margin-bottom:5px;">
+            <input type="text" placeholder="Max" style="width:100%; padding:6px;">
+
+            <button style="margin-top:10px; width:100%; background:#344e41; color:white; padding:8px; border:none; border-radius:6px;">Apply Filters</button>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="company-logo" style="width:40px;height:40px;background:#344e41;margin-bottom:10px;"></div>
+                <h3>Sample Project</h3>
+                <p><strong>Company:</strong> Sample Co.</p>
+                <p>Sample description text goes here. This is a placeholder.</p>
+                <p><strong>Skills:</strong> Sample Skills</p>
+                <p><strong>Duration:</strong> Sample</p>
+                <p><strong>Compensation:</strong> Sample</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="project-card">
+                <div class="company-logo" style="width:40px;height:40px;background:#344e41;margin-bottom:10px;"></div>
+                <h3>Sample Project</h3>
+                <p><strong>Company:</strong> Sample Co.</p>
+                <p>Sample description text goes here. This is a placeholder.</p>
+                <p><strong>Skills:</strong> Sample Skills</p>
+                <p><strong>Duration:</strong> Sample</p>
+                <p><strong>Compensation:</strong> Sample</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="project-card">
+                <div class="company-logo" style="width:40px;height:40px;background:#344e41;margin-bottom:10px;"></div>
+                <h3>Sample Project</h3>
+                <p><strong>Company:</strong> Sample Co.</p>
+                <p>Sample description text goes here. This is a placeholder.</p>
+                <p><strong>Skills:</strong> Sample Skills</p>
+                <p><strong>Duration:</strong> Sample</p>
+                <p><strong>Compensation:</strong> Sample</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="project-card">
+                <div class="company-logo" style="width:40px;height:40px;background:#344e41;margin-bottom:10px;"></div>
+                <h3>Sample Project</h3>
+                <p><strong>Company:</strong> Sample Co.</p>
+                <p>Sample description text goes here. This is a placeholder.</p>
+                <p><strong>Skills:</strong> Sample Skills</p>
+                <p><strong>Duration:</strong> Sample</p>
+                <p><strong>Compensation:</strong> Sample</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="project-card">
+                <div class="company-logo" style="width:40px;height:40px;background:#344e41;margin-bottom:10px;"></div>
+                <h3>Sample Project</h3>
+                <p><strong>Company:</strong> Sample Co.</p>
+                <p>Sample description text goes here. This is a placeholder.</p>
+                <p><strong>Skills:</strong> Sample Skills</p>
+                <p><strong>Duration:</strong> Sample</p>
+                <p><strong>Compensation:</strong> Sample</p>
+                <button>View Details</button>
+            </div>
+
+            <div class="project-card">
+                <div class="company-logo" style="width:40px;height:40px;background:#344e41;margin-bottom:10px;"></div>
+                <h3>Sample Project</h3>
+                <p><strong>Company:</strong> Sample Co.</p>
+                <p>Sample description text goes here. This is a placeholder.</p>
+                <p><strong>Skills:</strong> Sample Skills</p>
+                <p><strong>Duration:</strong> Sample</p>
+                <p><strong>Compensation:</strong> Sample</p>
+                <button>View Details</button>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="pagenavigation">
+        <button>Prev</button>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <button>Next</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Enginuity. All rights reserved.</p>
+    <p><strong>Contact Us:</strong> <u>customer-support@enginuity.com</u></p>
+</footer>
+
+</body>
 </html>

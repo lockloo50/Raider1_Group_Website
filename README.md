@@ -26,6 +26,8 @@ A platform that includes free messaging between verified students and companies,
 ### Gibson
 - Helped develop and look into collaborative branches
 - Working on Listing Page Design
+- Built the Account Page
+- Built the Project Listings Page
 ### Damien
 - Working on Homepage Design
 - Added the Hero Statement
