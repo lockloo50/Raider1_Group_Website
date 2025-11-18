@@ -29,10 +29,11 @@ A platform that includes free messaging between verified students and companies,
 - Built the Account Page
 - Built the Project Listings Page
 ### Damien
-- Working on Homepage Design
+- Built the Homepage Design
 - Added the Hero Statement
 - Created the Value Proposition for Students and Companies
 - Created the How It Works section
+- Built the Company Dashboard
 ### Silas
 - Helped develop and look into collaborative branches
 - Working on Account Page Design
