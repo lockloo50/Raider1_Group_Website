@@ -99,6 +99,33 @@ footer {
 	margin: 5px 0;
 }
 
+.friend-profile-header {
+	display: flex;
+	align-items: center;
+	background-color: #a3b18a;
+	padding: 20px;
+	border: 2px solid #344e41;
+	border-radius: 10px;
+}
+
+.friend-profile-pic {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	background-color: #344e41;
+	border: 1px solid black;
+	margin-right: 20px;
+}
+
+.friend-profile-info h2 {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+.friend-profile-info p {
+	margin: 5px 0;
+}
+
 .stats {
 	display: flex;
 	justify-content: space-around;
@@ -203,6 +230,15 @@ footer {
 	margin: 3px;
 	font-size: 0.9em;
 }
+.social-tag {
+	display: inline-block;
+	background-color: #588157;
+	color: white;
+	border-radius: 8px;
+	padding: 3px 8px;
+	margin: 5px;
+	font-size: 1.2em;
+}
 
 .sidebar button {
 	width: 100%;
@@ -226,12 +262,15 @@ footer {
 	margin-top: 6px;
 	font-weight: bold;
 }
+.sidebar-container {
+	display: block;
+	gap: 20px;
+}
 
 </style>
 </head>
 
 <body>
-
 
 <nav>
 	<li><img class="logo" src="images/logo.png" id="logo"></li> 
@@ -253,6 +292,10 @@ footer {
 			<div class="profile-info">
 				<h2>Welcome, Sample Student!</h2>
 				<p>Major: Sample Major</p>
+		<div class="skills">
+			<span class="social-tag">Following: 1000</span>
+			<span class="social-tag">Followers: 750</span>
+		</div>
 			</div>
 		</div>
 
@@ -330,6 +373,7 @@ footer {
 	</div>
 
 	<!-- SIDEBAR -->
+<div class="sidebar-container">
 	<div class="sidebar">
 		<h3>Profile Summary</h3>
 		<p><strong>Sample Student</strong></p>
@@ -349,6 +393,36 @@ footer {
 		</div>
 
 		<button>Edit Profile</button>
+	</div>
+	<br><br>
+	<div class="sidebar">
+		<h3>Messages</h3>
+		<div class="friend-profile-header">
+			<div class="friend-profile-pic"></div>
+			<div class="friend-profile-info">
+				<h2>Sample Friend</h2>
+				<p>Major: Sample Major</p>
+			</div>
+		</div>
+		<br>
+				<div class="friend-profile-header">
+			<div class="friend-profile-pic"></div>
+			<div class="friend-profile-info">
+				<h2>Sample Friend</h2>
+				<p>Major: Sample Major</p>
+			</div>
+		</div>
+		<br>
+				<div class="friend-profile-header">
+			<div class="friend-profile-pic"></div>
+			<div class="friend-profile-info">
+				<h2>Sample Friend</h2>
+				<p>Major: Sample Major</p>
+			</div>
+		</div>
+
+		<button>More Messages...</button>
+	</div>
 	</div>
 </div>
 
